@@ -1,6 +1,6 @@
 package com.github.bartlomiej.gora.planetary.rover;
 
-public class PlanetryRover {
+public class PlanetaryRover {
 
     private int x;
     private int y;
@@ -8,7 +8,7 @@ public class PlanetryRover {
 
     private Direction direction;
 
-    public PlanetryRover(final int x, final int y, final Direction direction, final PlanetSufrace planetSufrace) {
+    public PlanetaryRover(final int x, final int y, final Direction direction, final PlanetSufrace planetSufrace) {
         this.x = x;
         this.y = y;
         this.direction = direction;
@@ -24,7 +24,7 @@ public class PlanetryRover {
         private int y;
         private Direction direction;
 
-        public Placement(final int x, final int y, final Direction direction) {
+        Placement(final int x, final int y, final Direction direction) {
             this.x = x;
             this.y = y;
             this.direction = direction;
