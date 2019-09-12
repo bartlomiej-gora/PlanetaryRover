@@ -16,7 +16,7 @@ z informacjami o współrzędnych łazika i tego w jakim kierunku jest skierowan
 Zaprogramować metodę move(String), która będzie przyjmować łańcuch znaków w postaci: "ffflfffrfffrffflbb"</br>
 l - skręć w lewo (left)</br>
 r - skręć w prawo (right)</br>
-f - do przodu (forwar)</br>
+f - do przodu (forward)</br>
 b - do tyłu (back)</br>
 </br>
 ### Zadanie 2.</br>
