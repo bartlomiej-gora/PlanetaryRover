@@ -1,7 +1,7 @@
 package com.github.bartlomiej.gora.planetary.rover.groovy
 
 import com.github.bartlomiej.gora.planetary.rover.Direction
-import com.github.bartlomiej.gora.planetary.rover.PlanetSufrace
+import com.github.bartlomiej.gora.planetary.rover.PlanetSurface
 import com.github.bartlomiej.gora.planetary.rover.PlanetaryRover
 import spock.lang.Specification
 
@@ -15,10 +15,10 @@ class PlanetaryRoverSpec extends Specification {
     static final CENTER_Y = 25;
 
     def PlanetaryRover tesee;
-    def PlanetSufrace surface;
+    def PlanetSurface surface;
 
     def setup() {
-        surface = new PlanetSufrace(LEFT, RIGHT, TOP, BOTTOM);
+        surface = new PlanetSurface(LEFT, RIGHT, TOP, BOTTOM);
         tesee = new PlanetaryRover(CENTER_X, CENTER_Y, Direction.NORTH, surface);
     }
 

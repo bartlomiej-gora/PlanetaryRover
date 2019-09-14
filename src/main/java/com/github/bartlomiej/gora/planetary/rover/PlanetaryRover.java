@@ -4,22 +4,22 @@ public class PlanetaryRover {
 
     private int x;
     private int y;
-    private PlanetSufrace planetSufrace;
+    private PlanetSurface planetSurface;
 
     private Direction direction;
 
-    public PlanetaryRover(final int x, final int y, final Direction direction, final PlanetSufrace planetSufrace) {
+    public PlanetaryRover(final int x, final int y, final Direction direction, final PlanetSurface planetSurface) {
         this.x = x;
         this.y = y;
         this.direction = direction;
-        this.planetSufrace = planetSufrace;
+        this.planetSurface = planetSurface;
     }
 
     public void move(final String directions) {
 
     }
 
-    public class Placement {
+    public static class Placement {
         private int x;
         private int y;
         private Direction direction;

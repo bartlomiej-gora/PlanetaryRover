@@ -1,5 +1,7 @@
 package com.github.bartlomiej.gora.planetary.rover;
 
+import java.util.Arrays;
+
 public enum Direction {
     NORTH(0),
     EAST(90),
@@ -21,12 +23,10 @@ public enum Direction {
     }
 
     public Direction directionForDegreesFromNorth(int degreesFromNorth) {
-        int normalizedDegrees = Math.floorMod(degreesFromNorth, 360);
-        for (Direction direction : Direction.values()) {
-            if (direction.degreesFromNorth == normalizedDegrees) {
-                return direction;
-            }
-        }
-        return null;
+        return Arrays.stream(Direction.values())
+                .filter(direction -> direction.degreesFromNorth == Math.floorMod(degreesFromNorth, 360))
+                .findFirst()
+                .orElse(null);
+
     }
 }
