@@ -14,10 +14,10 @@ z informacjami o współrzędnych łazika i tego w jakim kierunku jest skierowan
 </br>
 ### Zadane 1</br>
 Zaprogramować metodę move(String), która będzie przyjmować łańcuch znaków w postaci: "ffflfffrfffrffflbb"</br>
-l - skręć w lewo (left)</br>
-r - skręć w prawo (right)</br>
-f - do przodu (forward)</br>
-b - do tyłu (back)</br>
+L - skręć w lewo (left)</br>
+R - skręć w prawo (right)</br>
+F - do przodu (forward)</br>
+B - do tyłu (back)</br>
 </br>
 ### Zadanie 2.</br>
 Planeta jest okrągła, więc należy zmodyfikować tak metodę move, żeby po przejechaniu przez granicę obszaru</br> 
