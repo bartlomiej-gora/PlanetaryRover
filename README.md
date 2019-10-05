@@ -13,7 +13,7 @@ Połozenie określone jest przez metodę getPlacement() zwracającą obiekt Plac
 z informacjami o współrzędnych łazika i tego w jakim kierunku jest skierowany (północ, południe, wschód, zachód)</br>
 </br>
 ### Zadane 1</br>
-Zaprogramować metodę move(String), która będzie przyjmować łańcuch znaków w postaci: "ffflfffrfffrffflbb"</br>
+Zaprogramować metodę move(String), która będzie przyjmować łańcuch znaków w postaci: "FFFLFFFRFFFRFFFLBB"</br>
 L - skręć w lewo (left)</br>
 R - skręć w prawo (right)</br>
 F - do przodu (forward)</br>
