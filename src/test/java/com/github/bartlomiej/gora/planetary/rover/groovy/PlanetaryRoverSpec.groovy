@@ -14,12 +14,12 @@ class PlanetaryRoverSpec extends Specification {
     static final CENTER_X = 25;
     static final CENTER_Y = 25;
 
-    def PlanetaryRover tesee;
+    def PlanetaryRover testee;
     def PlanetSurface surface;
 
     def setup() {
         surface = new PlanetSurface(LEFT, RIGHT, TOP, BOTTOM);
-        tesee = new PlanetaryRover(CENTER_X, CENTER_Y, Direction.NORTH, surface);
+        testee = new PlanetaryRover(CENTER_X, CENTER_Y, Direction.NORTH, surface);
     }
 
 }
