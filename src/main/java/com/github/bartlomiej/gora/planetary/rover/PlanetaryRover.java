@@ -8,11 +8,15 @@ public class PlanetaryRover {
 
     private Direction direction;
 
-    public PlanetaryRover(final int x, final int y, final Direction direction, final PlanetSurface planetSurface) {
+    private PlanetaryRover(final int x, final int y, final Direction direction, final PlanetSurface planetSurface) {
         this.x = x;
         this.y = y;
         this.direction = direction;
         this.planetSurface = planetSurface;
+    }
+
+    public static PlanetaryRover land(final int x, final int y, final Direction direction, final PlanetSurface planetSurface) {
+        return new PlanetaryRover(x, y, direction, planetSurface);
     }
 
     public void move(final String directions) {

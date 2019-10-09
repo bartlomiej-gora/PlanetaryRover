@@ -19,7 +19,7 @@ class PlanetaryRoverSpec extends Specification {
 
     def setup() {
         surface = new PlanetSurface(LEFT, RIGHT, TOP, BOTTOM);
-        tesee = new PlanetaryRover(CENTER_X, CENTER_Y, Direction.NORTH, surface);
+        tesee = PlanetaryRover.land(CENTER_X, CENTER_Y, Direction.NORTH, surface);
     }
 
 }
