@@ -4,7 +4,7 @@ public class PlanetaryRover {
 
     private int x;
     private int y;
-    private PlanetSurface planetSurface;
+    final private PlanetSurface planetSurface;
 
     private Direction direction;
 
@@ -23,19 +23,42 @@ public class PlanetaryRover {
     }
 
     public void move(final String directions) {
-        switch (directions) {
-            case "L" -> direction = direction.directionToLeft();
-            case "R" -> direction = direction.directionToRight();
-            case "F" -> y = y + 1;
-            case "B" -> y = y - 1;
+        directions.chars().forEach(character -> {
+            switch (Character.valueOf((char) character).toString()) {
+                case "L" -> direction = direction.directionToLeft();
+                case "R" -> direction = direction.directionToRight();
+                case "F" -> forward();
+                case "B" -> backward();
+            }
+        });
+
+    }
+
+    private void backward() {
+        switch (direction) {
+            case NORTH -> y = y - 1;
+            case SOUTH -> y = y + 1;
+            case EAST -> x = x - 1;
+            case WEST -> x = x + 1;
+
+        }
+    }
+
+    private void forward() {
+        switch (direction) {
+            case NORTH -> y = y + 1;
+            case SOUTH -> y = y - 1;
+            case EAST -> x = x + 1;
+            case WEST -> x = x - 1;
+
         }
     }
 
     public static class Placement {
 
-        private int x;
-        private int y;
-        private Direction direction;
+        final private int x;
+        final private int y;
+        final private Direction direction;
 
         Placement(final int x, final int y, final Direction direction) {
             this.x = x;
