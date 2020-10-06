@@ -23,35 +23,7 @@ public class PlanetaryRover {
     }
 
     public void move(final String directions) {
-        directions.chars().forEach(character -> {
-            switch (Character.valueOf((char) character).toString()) {
-                case "L" -> direction = direction.directionToLeft();
-                case "R" -> direction = direction.directionToRight();
-                case "F" -> forward();
-                case "B" -> backward();
-            }
-        });
 
-    }
-
-    private void backward() {
-        switch (direction) {
-            case NORTH -> y = y - 1;
-            case SOUTH -> y = y + 1;
-            case EAST -> x = x - 1;
-            case WEST -> x = x + 1;
-
-        }
-    }
-
-    private void forward() {
-        switch (direction) {
-            case NORTH -> y = y + 1;
-            case SOUTH -> y = y - 1;
-            case EAST -> x = x + 1;
-            case WEST -> x = x - 1;
-
-        }
     }
 
     public static class Placement {
