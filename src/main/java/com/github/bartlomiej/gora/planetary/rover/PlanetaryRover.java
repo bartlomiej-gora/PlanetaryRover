@@ -4,7 +4,7 @@ public class PlanetaryRover {
 
     private int x;
     private int y;
-    private PlanetSurface planetSurface;
+    final private PlanetSurface planetSurface;
 
     private Direction direction;
 
@@ -15,7 +15,10 @@ public class PlanetaryRover {
         this.planetSurface = planetSurface;
     }
 
-    public static PlanetaryRover land(final int x, final int y, final Direction direction, final PlanetSurface planetSurface) {
+    public static PlanetaryRover land(final int x,
+                                      final int y,
+                                      final Direction direction,
+                                      final PlanetSurface planetSurface) {
         return new PlanetaryRover(x, y, direction, planetSurface);
     }
 
@@ -24,9 +27,10 @@ public class PlanetaryRover {
     }
 
     public static class Placement {
-        private int x;
-        private int y;
-        private Direction direction;
+
+        final private int x;
+        final private int y;
+        final private Direction direction;
 
         Placement(final int x, final int y, final Direction direction) {
             this.x = x;
@@ -46,7 +50,6 @@ public class PlanetaryRover {
             return direction;
         }
     }
-
 
     public Placement getPlacement() {
         return new Placement(x, y, direction);
